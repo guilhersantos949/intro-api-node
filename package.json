@@ -1,0 +1,12 @@
+{
+  "name": "intro-api-node0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["API", "NODE JS", "MYSQL"],
+  "author": "Guilherme M santos",
+  "license": "MIT",
+  "description": ""
+}
