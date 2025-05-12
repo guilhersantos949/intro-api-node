@@ -1,6 +1,6 @@
 const db = require('../dataBase/connection');
 
-//função para listar as funções	
+
 module.exports = {
     async listarFuncao(request, response) {
         try {
