@@ -59,8 +59,8 @@ module.exports = {
 
     async updateUsuario(request, response) {
         try {
-            const { CD_Usuario, Senha, DT_Cadastro, DH_Acesso, DT_Vigencia, SN_Bloqueado, ID_Pessoa, ID_Usuario } = request.body;
-
+            const { CD_Usuario, Senha, DT_Cadastro, DH_Acesso, DT_Vigencia, SN_Bloqueado, ID_Pessoa } = request.body;
+            const { ID_Usuario } = request.params;
             const sql = 'UPDATE usuario SET CD_Usuario = ?, Senha = ?, DT_Cadastro = ?, DH_Acesso = ?, DT_Vigencia = ?, SN_Bloqueado = ?, ID_Pessoa = ? WHERE ID_Usuario = ?';
             const values = [CD_Usuario, Senha, DT_Cadastro, DH_Acesso, DT_Vigencia, SN_Bloqueado, ID_Pessoa, ID_Usuario];
 
